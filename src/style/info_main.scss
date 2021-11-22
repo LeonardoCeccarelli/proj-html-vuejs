@@ -1,0 +1,59 @@
+.info_section {
+    @include page_container;
+    padding: 40px 0;
+
+    .info_section_title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        p {
+            color: $c_primary;
+        }
+
+        h3 {
+            padding: 0 100px;
+            font-size: 23px;
+        }
+    }
+
+    .info_section_card_container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 25px;
+
+        .info_section_card {
+            width: calc(33% - 14px);
+            display: flex;
+            margin-bottom: 30px;
+
+            .icon_container {
+                margin-right: 20px;
+
+                i {
+                    font-size: 40px;
+                    font-weight: 100;
+                }
+            }
+
+            .text_container {
+
+                h3 {
+                    font-weight: 500;
+                }
+
+                p {
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .info_section_btn_container {
+        text-align: center;
+
+        button {
+            margin: 0 10px;
+        }
+    }
+}

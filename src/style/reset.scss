@@ -31,9 +31,9 @@ p {
 
 // Bottoni
 .btun {
-    border-radius: 5px;
+    border-radius: 7px;
     border: none;
-    padding: 10px 17px;
+    padding: 10px 20px;
     cursor: pointer;
 
     &:focus-visible {
@@ -55,5 +55,5 @@ p {
 .btun_white_primary {
     background-color: white;
     color: $c_primary;
-    border: 1px solid $c_primary;
+    border: 1px solid #eeeeee;
 }
