@@ -1,0 +1,111 @@
+nav {
+    @include d_flex_align_center;
+    height: 60px;
+
+    .nav_logo {
+        width: 25%;
+
+        .logo_container {
+            text-align: center;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+
+    .nav_link {
+        width: 50%;
+
+        ul {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            li {
+                color: $nav_c;
+                cursor: pointer;
+                position: relative;
+                margin: 0 5px;
+
+                a {
+                    display: inline-block;
+                    padding: 5px 13px;
+                    color: $nav_c;
+                    text-transform: capitalize;
+                    font-size: 15px;
+                }
+
+                i {
+                    @include angle_nav_link
+                }
+            }
+        }
+    }
+
+    .nav_search {
+        @include d_flex_align_center;
+        height: 100%;
+        width: 25%;
+
+        .nav_search_language {
+            @include d_flex_align_center;
+            height: 100%;
+            border-right: 1px solid rgba(0, 0, 0, 0.150);
+
+            .image_container {
+                width: 30px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .language_container {
+                position: relative;
+
+                a {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    padding: 5px 13px;
+                }
+
+                i {
+                    @include angle_nav_link
+                }
+            }
+
+            .user_icon_container {
+                margin: 0 7px 0 15px;
+
+                i {
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: #404040;
+                }
+            }
+        }
+
+        .nav_search_input {
+            padding: 0 10px;
+
+            input {
+                width: 120px;
+                border: none;
+                font-size: 15px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            i {
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 13px;
+                color: #404040;
+            }
+        }
+    }
+}

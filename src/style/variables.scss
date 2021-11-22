@@ -1,0 +1,14 @@
+$nav_c: #3f3a64;
+
+@mixin angle_nav_link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 12px;
+}
+
+@mixin d_flex_align_center {
+    display: flex;
+    align-items: center;
+}
