@@ -1,4 +1,7 @@
 $nav_c: #3f3a64;
+$c_primary: #20ad96;
+$c_title: #333333;
+$c_secondary: #777777;
 
 @mixin angle_nav_link {
     position: absolute;
@@ -11,4 +14,9 @@ $nav_c: #3f3a64;
 @mixin d_flex_align_center {
     display: flex;
     align-items: center;
+}
+
+@mixin page_container {
+    width: 1000px;
+    margin: 0 auto;
 }

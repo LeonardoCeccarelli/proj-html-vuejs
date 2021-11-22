@@ -1,0 +1,51 @@
+.hero_section_container {
+    background-color: #eff2f6;
+
+    .hero_section_content {
+        @include page_container;
+        display: flex;
+    
+        .text_container {
+            width: 40%;
+            padding-left: 100px;
+            @include d_flex_align_center;
+
+            p.head_title {
+                color: $c_primary;
+                font-size: 18px;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 30px;
+                letter-spacing: .6px;
+                font-weight: bold;
+            }
+
+            p.sub_title {
+                font-size: 14px;
+            }
+        }
+    
+        .image_container {
+            width: 60%;
+            padding-left: 100px;
+            padding-top: 20px;
+            position: relative;
+
+            img.background_global {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            img {
+                display: block;
+                height: 400px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}

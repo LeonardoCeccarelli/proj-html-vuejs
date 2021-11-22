@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+// Tag UTILITIES
 ul {
     list-style: none;
 }
@@ -11,4 +12,48 @@ ul {
 a {
     text-decoration: none;
     color: initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $c_title;
+}
+
+p {
+    color: $c_secondary;
+}
+
+// Classi UTILITIES
+
+// Margine
+.m_bottom {
+    margin-bottom: 15px;
+}
+
+// Bottoni
+.btun {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 17px;
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &.btun_small {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+.btun_primary {
+    background-color: $c_primary;
+    border: 1px solid $c_primary;
+    color: white;
+}
+
+.btun_white_primary {
+    background-color: white;
+    color: $c_primary;
+    border: 1px solid $c_primary;
 }
