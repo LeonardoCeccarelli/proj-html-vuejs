@@ -38,6 +38,12 @@
             </div>
           </li>
         </ul>
+        <div class="course_sub_text">
+          <p>
+            Take the control of their life back and start doing things to make
+            their dream come true. <a href="#">View all courses →</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

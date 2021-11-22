@@ -1,0 +1,95 @@
+.network_container {
+    padding: 60px 0;
+    background-color: #323043;
+    position: relative;
+
+    img.background_globe {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-15%);
+        width: 800px;
+    }
+
+    img.background_cube {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        width: 110px;
+    }
+
+    .network_content {
+        width: 1050px;
+        margin: 0 auto;
+        display: flex;
+
+        .network_image_container {
+            display: flex;
+            align-items: center;
+            width: 45%;
+
+            .network_image {
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+
+                img.logo_play {
+                    width: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .network_text_container {
+            width: 55%;
+
+            .network_text_content {
+                width: 70%;
+                padding-left: 50px;
+                position: relative;
+
+                h2 {
+                    color: white;
+                    font-size: 35px;
+                    letter-spacing: 1px;
+                }
+
+                .question_container {
+                    padding: 20px 0 10px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+                    h4.question_title {
+                        color: white;
+                        font-size: 18px;
+                    }
+
+                    i {
+                        margin-right: 15px;
+                    }
+
+                    &.active {
+                        h4.question_title {
+                            color: $c_primary;
+                        }
+
+                        i {
+                            color: $c_primary;
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

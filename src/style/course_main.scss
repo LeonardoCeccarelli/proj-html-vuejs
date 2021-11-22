@@ -104,5 +104,21 @@
                 }
             }
         }
+
+        .course_sub_text {
+            text-align: center;
+            width: 450px;
+            margin: 30px auto 0;
+
+            p {
+                font-size: 15px;
+
+                a {
+                    font-weight: 600;
+                }
+            }
+
+            
+        }
     }
 }
