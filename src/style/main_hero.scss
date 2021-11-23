@@ -1,5 +1,24 @@
 .hero_section_container {
     background-color: #eff2f6;
+    position: relative;
+
+    .overlay_icon {
+        position: absolute;
+        right: 0;
+        top: 30%;
+        padding: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.150);
+
+        i {
+            cursor: pointer;
+            font-size: 10px;
+            color: $c_secondary;
+            margin: 5px 0;
+        }
+    }
 
     .hero_section_content {
         @include page_container;

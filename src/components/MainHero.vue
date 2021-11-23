@@ -1,5 +1,11 @@
 <template>
   <div class="hero_section_container">
+    <div class="overlay_icon">
+      <i class="fa fa-bar-chart"></i>
+      <i class="fa fa-sign-in"></i>
+      <i class="fa fa-book"></i>
+      <i class="fa fa-shopping-cart"></i>
+    </div>
     <div class="hero_section_content">
       <div class="text_container">
         <div>
