@@ -1,0 +1,84 @@
+.review_container {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+
+    .review_content {
+        width: 1100px;
+        margin: 0 auto;
+
+        .review_title_container {
+            text-align: center;
+        }
+
+        .review_card_container {
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+
+            .review_single_card {
+                padding: 25px;
+                background-color: white;
+                width: calc(100% / 3 - 17px);
+                font-size: 14px;
+                line-height: 18px;
+                opacity: .6;
+
+                p.title_review {
+                    color: #3f3a64;
+                    font-weight: bold;
+                }
+
+                p.content_review {
+                }
+
+                .user_container {
+                    margin-top: 25px;
+                    display: flex;
+
+                    img.user_image {
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    .user_text {
+                        margin-left: 15px;
+
+                        .user_name {
+                            color: #3f3a64;
+                            margin-bottom: 15px;
+                        }
+
+                        .user_type {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .dot_container {
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+
+            i {
+                color: #3f3a64;
+                margin: 0 10px;
+                font-size: 6px;
+                opacity: .5;
+
+                &.active {
+                    opacity: 1;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

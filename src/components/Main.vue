@@ -6,6 +6,7 @@
     <CourseMain></CourseMain>
     <NetworkMain></NetworkMain>
     <EventMain></EventMain>
+    <ReviewMain></ReviewMain>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HelpMain from "./HelpMain.vue";
 import InfoMain from "./InfoMain.vue";
 import MainHero from "./MainHero.vue";
 import NetworkMain from "./NetworkMain.vue";
+import ReviewMain from "./ReviewMain.vue";
 export default {
   components: {
     MainHero,
@@ -24,6 +26,7 @@ export default {
     CourseMain,
     NetworkMain,
     EventMain,
+    ReviewMain,
   },
   name: "Main",
 };
