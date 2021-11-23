@@ -26,6 +26,25 @@ p.head_title {
     color: $c_primary;
 }
 
+p.footer_title {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+p.footer_subtitle {
+    color: $c_secondary;
+    font-size: 15px;
+}
+
+a.footer_subtitle {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: -10px;
+    color: $c_secondary;
+    font-size: 15px;
+}
+
 // Classi UTILITIES
 
 // Margine
