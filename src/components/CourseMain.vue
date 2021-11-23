@@ -3,8 +3,8 @@
     <div class="course_container">
       <div class="course_content">
         <div class="course_title">
-          <p class="m_bottom">Let's Dream Big Together</p>
-          <h2>Explore How Cain I Help You</h2>
+          <p class="m_bottom head_title">Let's Dream Big Together</p>
+          <h2>Explore How Can I Help You</h2>
         </div>
         <ul class="course_card_container">
           <li v-for="(card, i) in listCourseCard" :key="i" class="course_card">

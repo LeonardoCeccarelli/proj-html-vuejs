@@ -1,0 +1,97 @@
+.event_section {
+    padding: 60px 0;
+    @include page_container;
+
+    .event_section_title_container {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .list_event_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        .single_event {
+            width: calc(50% - 13px);
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            display: flex;
+            position: relative;
+            transition: all .1s linear;
+
+            .line_overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: $c_primary;
+                opacity: 0;
+                transition: all .1s linear;
+            }
+
+            .single_event_title {
+                flex-grow: 1;
+                padding-right: 20px;
+
+                p {
+                    font-size: 15px;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .single_event_date {
+                flex-shrink: 0;
+                text-align: center;
+
+                p.day {
+                    font-size: 30px;
+                    margin-bottom: 2px;
+                }
+
+                p.month {
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
+                    font-size: 13px;
+                    color: black;
+                }
+            }
+
+            &:hover {
+                background-color: white;
+                box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.219);
+
+                .line_overlay {
+                    opacity: 1;
+                }
+
+                .btun.btun_small {
+                    background-color: #3f3a64;
+                    color: white;
+                    border-color: #3f3a64;
+                }
+            }
+        }
+    }
+
+    .link_bottom {
+        padding: 25px 0;
+        text-align: center;
+        font-size: 15px;
+
+        a.link_event {
+            border-bottom: 1px solid rgba(128, 128, 128, 0.438);
+            color: $c_primary;
+        }
+    }
+}

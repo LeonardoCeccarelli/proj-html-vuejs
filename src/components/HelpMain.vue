@@ -3,7 +3,7 @@
     <div class="help_section_container">
       <div class="help_section_content">
         <div class="help_section_content_title">
-          <p class="m_bottom">Let's Dream Big Together</p>
+          <p class="m_bottom head_title">Let's Dream Big Together</p>
           <h2>Explore How Can I Help You</h2>
         </div>
         <ul class="help_section_card_container">

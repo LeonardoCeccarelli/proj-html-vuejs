@@ -2,7 +2,7 @@
   <div>
     <div class="info_section">
       <div class="info_section_title">
-        <p class="m_bottom">Let's Dream Big Together</p>
+        <p class="m_bottom head_title">Let's Dream Big Together</p>
         <h3>
           We are pioneers of a digital approach, using leading-edge technology
           to simplify procedures ad apply executive coaching in the new age of
