@@ -7,6 +7,7 @@
     <NetworkMain></NetworkMain>
     <EventMain></EventMain>
     <ReviewMain></ReviewMain>
+    <SubscribeMain></SubscribeMain>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import InfoMain from "./InfoMain.vue";
 import MainHero from "./MainHero.vue";
 import NetworkMain from "./NetworkMain.vue";
 import ReviewMain from "./ReviewMain.vue";
+import SubscribeMain from "./SubscribeMain.vue";
 export default {
   components: {
     MainHero,
@@ -27,6 +29,7 @@ export default {
     NetworkMain,
     EventMain,
     ReviewMain,
+    SubscribeMain,
   },
   name: "Main",
 };

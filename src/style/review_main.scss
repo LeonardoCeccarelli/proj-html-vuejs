@@ -29,9 +29,6 @@
                     font-weight: bold;
                 }
 
-                p.content_review {
-                }
-
                 .user_container {
                     margin-top: 25px;
                     display: flex;
@@ -49,6 +46,8 @@
                         .user_name {
                             color: #3f3a64;
                             margin-bottom: 15px;
+                            text-transform: uppercase;
+                            font-weight: bold;
                         }
 
                         .user_type {
