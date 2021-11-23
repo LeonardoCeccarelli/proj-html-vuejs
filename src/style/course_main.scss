@@ -73,8 +73,9 @@
 
                                 span {
                                     font-size: 13px;
+                                    display: inline-block;
 
-                                    &:last-child {
+                                    &.last_item {
                                         margin-left: 12px;
                                     }
                                 }

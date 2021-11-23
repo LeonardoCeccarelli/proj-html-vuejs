@@ -8,6 +8,7 @@
         </div>
         <ul class="review_card_container">
           <li
+            @mouseover="onChangeActiveImage(i)"
             v-for="(user, i) in listUserReview"
             :key="i"
             class="review_single_card"
@@ -34,7 +35,8 @@
         </ul>
         <div class="dot_container">
           <i
-            v-for="i in 4"
+            @click="onChangeActiveImage(i)"
+            v-for="(user, i) in listUserReview"
             :key="'dot n_' + i"
             class="fa fa-circle"
             :class="currentUserActive === i ? 'active' : ''"
@@ -81,6 +83,11 @@ export default {
 
       currentUserActive: 1,
     };
+  },
+  methods: {
+    onChangeActiveImage(index) {
+      this.currentUserActive = index;
+    },
   },
 };
 </script>

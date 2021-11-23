@@ -11,9 +11,13 @@
       <div class="nav_link">
         <ul>
           <!-- Singolo link -->
-          <li v-for="(link, i) in linkNavList" :key="i">
-            <a :href="link.url">{{ link.text }}</a>
+          <li tabindex="0" v-for="(link, i) in linkNavList" :key="i">
+            <a>{{ link.text }}</a>
             <i class="fa fa-angle-down"></i>
+            <div class="dropdown_menu">
+              <a :href="link.url">Link DropDown Menu</a>
+              <a :href="link.url">Altro Link</a>
+            </div>
           </li>
         </ul>
       </div>

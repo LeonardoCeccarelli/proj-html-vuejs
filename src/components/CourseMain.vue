@@ -20,13 +20,9 @@
                 </p>
                 <div class="on_hover_card">
                   <div class="info">
-                    <span
-                      ><i class="fa fa-file-text-o" aria-hidden="true"></i> 20
-                      Lessons</span
-                    >
-                    <span
-                      ><i class="fa fa-user-o" aria-hidden="true"></i> 50
-                      Students</span
+                    <span><i class="fa fa-file-text-o"></i> 20 Lessons</span>
+                    <span class="last_item"
+                      ><i class="fa fa-user-o"></i> 50 Students</span
                     >
                     <p class="info_description">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.

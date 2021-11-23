@@ -56,7 +56,7 @@ export default {
         },
         {
           text: "Blog",
-          url: "Blog",
+          url: "#Blog",
         },
         {
           text: "About us",

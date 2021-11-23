@@ -25,12 +25,12 @@ nav {
             li {
                 color: $nav_c;
                 cursor: pointer;
+                padding: 5px 13px;
                 position: relative;
                 margin: 0 5px;
 
                 a {
                     display: inline-block;
-                    padding: 5px 13px;
                     color: $nav_c;
                     text-transform: capitalize;
                     font-size: 15px;
@@ -38,6 +38,46 @@ nav {
 
                 i {
                     @include angle_nav_link
+                }
+
+                .dropdown_menu {
+                    position: absolute;
+                    top: 110%;
+                    left: 50%;
+                    width: 200px;
+                    transform: translateX(-50%);
+                    background-color: white;
+                    padding: 10px;
+                    z-index: 2;
+                    text-align: left;
+                    border: 2px solid $c_primary;
+                    border-radius: 10px;
+                    display: none;
+
+                    a {
+                        color: $c_primary;
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                &:focus {
+
+                    i {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    .dropdown_menu {
+                        display: initial
+                    }
                 }
             }
         }
