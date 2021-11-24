@@ -1,12 +1,16 @@
 <template>
   <div>
     <div class="event_section">
+      <!-- Sezione titolo -->
       <div class="event_section_title_container">
         <p class="head_title m_bottom">Wanna transform your life?</p>
         <h2>Upcoming Events</h2>
       </div>
+      <!-- Contenitore lista eventi -->
       <ul class="list_event_container">
+        <!-- Singola card evento -->
         <li v-for="(event, i) in listEvent" :key="i" class="single_event">
+          <!-- Linea overlay sx -->
           <div class="line_overlay"></div>
           <div class="single_event_title">
             <p class="m_bottom">
@@ -23,6 +27,7 @@
           </div>
         </li>
       </ul>
+      <!-- Contenitore link per eventi -->
       <div class="link_bottom">
         <p>
           Exited about our event?

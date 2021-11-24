@@ -2,11 +2,14 @@
   <div>
     <div class="review_container">
       <div class="review_content">
+        <!-- Sezione titolo -->
         <div class="review_title_container">
           <p class="head_title m_bottom">People are praising Maxcoach</p>
           <h2>What make the love us?</h2>
         </div>
+        <!-- Lista commenti da utenti -->
         <ul class="review_card_container">
+          <!-- Singola recensione -->
           <li
             @mouseover="onChangeActiveImage(i)"
             v-for="(user, i) in listUserReview"
@@ -17,6 +20,7 @@
             <p class="title_review m_bottom">{{ user.titleReview }}</p>
             <p class="content_review">{{ user.contentReview }}</p>
             <div class="user_container">
+              <!-- Immagine utente -->
               <img
                 class="user_image"
                 :src="
@@ -33,6 +37,7 @@
             </div>
           </li>
         </ul>
+        <!-- Indicatori (puntini) -->
         <div class="dot_container">
           <i
             @click="onChangeActiveImage(i)"

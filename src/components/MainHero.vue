@@ -1,5 +1,6 @@
 <template>
   <div class="hero_section_container">
+    <!-- Barra laterale dx -->
     <div class="overlay_icon">
       <i class="fa fa-bar-chart"></i>
       <i class="fa fa-sign-in"></i>
@@ -7,6 +8,7 @@
       <i class="fa fa-shopping-cart"></i>
     </div>
     <div class="hero_section_content">
+      <!-- Sezione testo -->
       <div class="text_container">
         <div>
           <p class="m_bottom head_title">New Challenge, New Skills</p>
@@ -20,6 +22,7 @@
           </button>
         </div>
       </div>
+      <!-- Sezione immagini -->
       <div class="image_container">
         <img
           src="@/assets/home-business-hero-global-image.png"

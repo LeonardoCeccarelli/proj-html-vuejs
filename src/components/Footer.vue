@@ -2,6 +2,7 @@
   <div>
     <div class="footer_container">
       <div class="footer_content">
+        <!-- Sezione informazioni sito (indirizzo, telefono, orari, ecc...) -->
         <div class="footer_address_container">
           <p class="footer_title m_bottom">Address</p>
           <p class="footer_subtitle m_bottom">
@@ -18,7 +19,9 @@
             <i class="fa fa-linkedin-square"></i>
           </div>
         </div>
+        <!-- Sezione link footer -->
         <div class="footer_link_container">
+          <!-- Link explore -->
           <div class="footer_link_explore">
             <p class="footer_title m_bottom">Explore</p>
             <ul class="footer_link_sx">
@@ -27,6 +30,7 @@
               </li>
             </ul>
           </div>
+          <!-- Link information -->
           <div class="footer_link_information">
             <p class="footer_title m_bottom">Information</p>
             <ul>
@@ -36,6 +40,7 @@
             </ul>
           </div>
         </div>
+        <!-- Footer copyright -->
         <div class="footer_copyright_container">
           <p class="footer_subtitle">© 2020 Maxcoach. All Right Reserved</p>
         </div>

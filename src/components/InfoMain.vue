@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="info_section">
+      <!-- Sezione titolo -->
       <div class="info_section_title">
         <p class="m_bottom head_title">Let's Dream Big Together</p>
         <h3>
@@ -9,8 +10,9 @@
           digitalization.
         </h3>
       </div>
-      <!-- Singola card -->
+      <!-- Contenitore card -->
       <ul class="info_section_card_container">
+        <!-- Singola card -->
         <li
           v-for="(item, i) in listInfoCard"
           :key="i"
@@ -25,6 +27,7 @@
           </div>
         </li>
       </ul>
+      <!-- Sezione bottoni -->
       <div class="info_section_btn_container">
         <button class="btun btun_white_primary" type="button">
           Learn more

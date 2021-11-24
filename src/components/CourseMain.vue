@@ -2,11 +2,14 @@
   <div>
     <div class="course_container">
       <div class="course_content">
+        <!-- Sezione titolo -->
         <div class="course_title">
           <p class="m_bottom head_title">Let's Dream Big Together</p>
           <h2>Explore How Can I Help You</h2>
         </div>
+        <!-- Contenitore card -->
         <ul class="course_card_container">
+          <!-- Singola card -->
           <li v-for="(card, i) in listCourseCard" :key="i" class="course_card">
             <div class="content_card">
               <img :src="require('@/assets/' + card.imagePath)" alt="" />
@@ -18,6 +21,7 @@
                 <p class="description m_bottom">
                   {{ card.title }}
                 </p>
+                <!-- Sezione card overlay -->
                 <div class="on_hover_card">
                   <div class="info">
                     <span><i class="fa fa-file-text-o"></i> 20 Lessons</span>
@@ -34,6 +38,7 @@
             </div>
           </li>
         </ul>
+        <!-- Sezione link -->
         <div class="course_sub_text">
           <p>
             Take the control of their life back and start doing things to make

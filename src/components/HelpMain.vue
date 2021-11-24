@@ -2,11 +2,14 @@
   <div>
     <div class="help_section_container">
       <div class="help_section_content">
+        <!-- Sezione titolo -->
         <div class="help_section_content_title">
           <p class="m_bottom head_title">Let's Dream Big Together</p>
           <h2>Explore How Can I Help You</h2>
         </div>
+        <!-- Contenitore card -->
         <ul class="help_section_card_container">
+          <!-- Singola card -->
           <li
             v-for="(card, i) in listHelpCard"
             :key="i"
@@ -32,6 +35,7 @@
             </div>
           </li>
         </ul>
+        <!-- Indicatori (puntini) -->
         <div class="dot_container">
           <i
             v-for="i in 3"
