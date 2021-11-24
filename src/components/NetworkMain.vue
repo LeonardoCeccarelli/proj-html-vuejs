@@ -29,31 +29,20 @@
         <div class="network_text_container">
           <div class="network_text_content">
             <h2>To Trive In Buisness Today, You'll Need a Good Plan</h2>
-            <div class="question_container active">
+            <div
+              v-for="(question, i) in listQuestion"
+              :key="i"
+              class="question_container"
+              :class="i === currentQuestionActive ? 'active' : ''"
+              @click="onClickChangeQuestion(i)"
+            >
               <h4 class="question_title m_bottom">
-                <i class="fa fa-chevron-circle-up"></i>How can we help?
+                <i class="fa fa-chevron-circle-down"></i>{{ question.title }}
               </h4>
-              <p class="m_bottom">
-                How many courses you've been on, using however many techniques
-                and methods. Unless you've come to rendize the value of mindset,
-                then you've get to understand how succes comes.
-              </p>
-              <p class="m_bottom">
-                With everyone else's mindset involving impacted too. Hence why
-                buisness coaching is so crucial for succes.
-              </p>
-            </div>
-            <div class="question_container">
-              <h4 class="question_title m_bottom">
-                <i class="fa fa-chevron-circle-down"></i>Why would i need a
-                buisness COACH?
-              </h4>
-            </div>
-            <div class="question_container">
-              <h4 class="question_title m_bottom">
-                <i class="fa fa-chevron-circle-down"></i>What is one-to-one
-                coaching?
-              </h4>
+              <div class="question_text">
+                <p class="m_bottom">{{ question.textTop }}</p>
+                <p class="m_bottom">{{ question.textBottom }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -65,6 +54,40 @@
 <script>
 export default {
   name: "NetworkMain",
+  data() {
+    return {
+      listQuestion: [
+        {
+          title: "How can we help?",
+          textTop:
+            "How many courses you've been on, using however many techniques and methods. Unless you've come to rendize the value of mindset, then you've get to understand how succes comes.",
+          textBottom:
+            "With everyone else's mindset involving impacted too. Hence why buisness coaching is so crucial for succes.",
+        },
+        {
+          title: "Why would i need a buisness COACH?",
+          textTop:
+            "How many courses you've been on, using however many techniques and methods. Unless you've come to rendize the value of mindset, then you've get to understand how succes comes.",
+          textBottom:
+            "With everyone else's mindset involving impacted too. Hence why buisness coaching is so crucial for succes.",
+        },
+        {
+          title: "What is one-to-one coaching?",
+          textTop:
+            "How many courses you've been on, using however many techniques and methods. Unless you've come to rendize the value of mindset, then you've get to understand how succes comes.",
+          textBottom:
+            "With everyone else's mindset involving impacted too. Hence why buisness coaching is so crucial for succes.",
+        },
+      ],
+
+      currentQuestionActive: 0,
+    };
+  },
+  methods: {
+    onClickChangeQuestion(index) {
+      this.currentQuestionActive = index;
+    },
+  },
 };
 </script>
 
